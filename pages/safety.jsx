@@ -1,8 +1,5 @@
 import { useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
-import bags from "../public/images/bags.jpg";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import styles from "../styles/Home.module.css";
 import styles2 from "../styles/Safety.module.css";
@@ -14,7 +11,7 @@ import useLogout from "../hooks/useLogout";
 import Hero from "../components/hero";
 
 
-//I'm trying to fetch an API call and this is preventing me from doing so - are we only allowed one getServerSideProps call?
+
 export const getServerSideProps = withIronSessionSsr(
   async function getServerSideProps({ req }) {
     const user = req.session.user;
@@ -39,11 +36,13 @@ export default function Safety(props) {
 
   /*  Search Travel Articles from the NYT */
   const [query, getQuery] = useState();
-  const onChangeHandler = (e) => getSearch(e.target.value);
-  const onSubmitHandler = (e) => {
-    e.preventDefault();
-    router.push(`${search}`);
-  };
+ // const router2 = useRouter()
+  const onChangeHandler = e => getQuery(e.target.value)
+  const onSubmitHandler = e => {
+   e.preventDefault()
+    //load page  articles/Chicago (for example)
+    router.push(`/articles/${query}`)
+  }
 
   return (
     <div className={styles.container}>
@@ -166,7 +165,8 @@ export default function Safety(props) {
                 onChange={onChangeHandler}
                 className={styles2.formInput}
               />
-              <button className={styles.btn}>  Search </button>
+             
+             
             </form>
           </div>
         </div>

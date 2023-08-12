@@ -155,6 +155,9 @@
   text-align: center;
 }
 
+.spanImage {
+  width:100%;
+}
 
 .welcomeSection {
   width:60%;
