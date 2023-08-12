@@ -8,7 +8,7 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import useLogout from "../hooks/useLogout";
 import Hero from "../components/hero";
-import {TravelBlog} from "../db/models/blog";
+//import {TravelBlog} from "../db/models/blog";
 
 
 
