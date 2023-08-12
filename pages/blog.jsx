@@ -32,7 +32,7 @@ export const getServerSideProps = withIronSessionSsr(
 
 
 
-export default function Safety(props) {
+export default function Blog(props) {
   const router = useRouter();
   const logout = useLogout();
 
