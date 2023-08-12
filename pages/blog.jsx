@@ -8,9 +8,6 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import useLogout from "../hooks/useLogout";
 import Hero from "../components/hero";
-//import {TravelBlog} from "../db/models/blog";
-
-
 
 
 export const getServerSideProps = withIronSessionSsr(
@@ -37,22 +34,22 @@ export default function Blog(props) {
 
   //post content from form below to mongo... 
 
-  const onSubmitHandler = async (e) => {
-    e.preventDefault();
+  // const onSubmitHandler = async (e) => {
+  //   e.preventDefault();
 
-    const location = document.getElementById('location').value;
-    const memory = document.getElementById('story').value;
-    const date = document.getElementById('date').value;
+  //   const location = document.getElementById('location').value;
+  //   const memory = document.getElementById('story').value;
+  //   const date = document.getElementById('date').value;
 
-    try {
-      const pushtoMongo = await TravelBlog(location,memory,date);
-      console.log(pushtoMongo)
+  //   try {
+  //     const pushtoMongo = await TravelBlog(location,memory,date);
+  //     console.log(pushtoMongo)
 
-    }
-    catch(err){
-      console.log("didn't work!! ")
-    }
-  };
+  //   }
+  //   catch(err){
+  //     console.log("didn't work!! ")
+  //   }
+  // };
 
   return (
     <div className={styles.container}>
