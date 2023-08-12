@@ -1,10 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import { useRouter } from "next/router";
-import Header from "../components/header";
 import Footer from "../components/footer";
 import Hero from "../components/hero";
 
@@ -55,7 +53,6 @@ export default function Signup(props) {
         <title>Destination Discovery: Sign up for an Account!</title>
         <link rel="icon" href="/favIcon.png" />
       </Head>
-
       <Hero />
       <main className={styles.main}>
       <h1 className={styles.title}>       You Have Arrived!         </h1>
