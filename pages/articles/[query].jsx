@@ -31,6 +31,10 @@ export async function getServerSideProps({ params }) {
 Reason: `undefined` cannot be serialized as JSON. Please use `null` or omit this value. */
 
 
+// I know that this is not safe and should be hidden but I tried adding it as an environmental variable in Vercel, in teh .env.local file and nothing Worked. 
+
+const NYT_API_KEY= hsMsQYuhlWX070H87OV9DBZBRCRIiTUn; 
+  
   const URL = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${params.query}&fq=section_name:("Travel")&api-key=${NYT_API_KEY}`;
 
   const results = await search(URL);
