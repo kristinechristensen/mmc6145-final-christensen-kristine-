@@ -1,6 +1,4 @@
-import { useState } from "react";
 import Head from "next/head";
-import { useRouter } from "next/router";
 import { search } from "../api";
 import Image from "next/image";
 import Link from "next/link";
@@ -29,12 +27,8 @@ export const getServerSideProps = withIronSessionSsr(
 export async function getServerSideProps({ params }) {
   /* Note: Error: Error serializing `.results` returned from `getServerSideProps` in "/articles/[query]".
 Reason: `undefined` cannot be serialized as JSON. Please use `null` or omit this value. */
+  const NYT_API_KEY = "hsMsQYuhlWX070H87OV9DBZBRCRIiTUn";
 
-
-// I know that this is not safe and should be hidden but I tried adding it as an environmental variable in Vercel, in teh .env.local file and nothing Worked. 
-
-const NYT_API_KEY= hsMsQYuhlWX070H87OV9DBZBRCRIiTUn; 
-  
   const URL = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${params.query}&fq=section_name:("Travel")&api-key=${NYT_API_KEY}`;
 
   const results = await search(URL);
@@ -47,8 +41,8 @@ const NYT_API_KEY= hsMsQYuhlWX070H87OV9DBZBRCRIiTUn;
 }
 
 export default function Articles({ results, query }) {
-  const router = useRouter();
-
+  
+/* Note: looking for a way to filter out images that have undefined in the string- currently working on it */
  
   return (
     <div className={styles.container}>
