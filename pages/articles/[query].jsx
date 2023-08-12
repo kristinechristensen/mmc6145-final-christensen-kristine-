@@ -31,7 +31,7 @@ export async function getServerSideProps({ params }) {
 Reason: `undefined` cannot be serialized as JSON. Please use `null` or omit this value. */
 
 
-  const URL = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${params.query}&fq=section_name:("Travel")&api-key=${API_KEY}`;
+  const URL = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${params.query}&fq=section_name:("Travel")&api-key=${NYT_API_KEY}`;
 
   const results = await search(URL);
   return {
