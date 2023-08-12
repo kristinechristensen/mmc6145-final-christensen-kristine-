@@ -29,7 +29,7 @@ export const getServerSideProps = withIronSessionSsr(
 export async function getServerSideProps({ params }) {
   /* Note: Error: Error serializing `.results` returned from `getServerSideProps` in "/articles/[query]".
 Reason: `undefined` cannot be serialized as JSON. Please use `null` or omit this value. */
-  const API_KEY = "hsMsQYuhlWX070H87OV9DBZBRCRIiTUn";
+
 
   const URL = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${params.query}&fq=section_name:("Travel")&api-key=${API_KEY}`;
 
