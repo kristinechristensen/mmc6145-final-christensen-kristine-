@@ -12,7 +12,7 @@ export default function Header(props) {
     <header className={styles.container}>
       {props.isLoggedIn ? (
         <>
-          <p className={styles.logo}><Image src={logo} alt="logo"/></p>
+          <p className={styles.logo}> <Image src={logo} alt="Logo Art Work"/></p>
           <div>
             <nav className={styles.navigation}>
             <Link href="">Welcome, {props.username}!</Link>
