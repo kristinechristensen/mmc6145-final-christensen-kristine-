@@ -18,4 +18,4 @@ const TravelBlog = new Schema({
   }
 })
 
-export default models.TravelBlog || model('TravelBlog', UserSchema)
+export default models.TravelBlog 

@@ -9,6 +9,8 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import useLogout from "../hooks/useLogout";
 import Hero from "../components/hero";
+import {TravelBlog} from "../db/models/blog"
+
 
 
 
@@ -34,15 +36,24 @@ export default function Safety(props) {
   const router = useRouter();
   const logout = useLogout();
 
-  /*  Search Travel Articles from the NYT */
-  const [query, getQuery] = useState();
- // const router2 = useRouter()
-  const onChangeHandler = e => getQuery(e.target.value)
-  const onSubmitHandler = e => {
-   e.preventDefault()
-    //load page  articles/Chicago (for example)
-    router.push(`/articles/${query}`)
-  }
+  //post content from form below to mongo... 
+
+  const onSubmitHandler = async (e) => {
+    e.preventDefault();
+
+    const location = document.getElementById('location').value;
+    const memory = document.getElementById('story').value;
+    const date = document.getElementById('date').value;
+
+    try {
+      const pushtoMongo = await TravelBlog(location,memory,date);
+      console.log(pushtoMongo)
+
+    }
+    catch(err){
+      console.log("didn't work!! ")
+    }
+  };
 
   return (
     <div className={styles.container}>
