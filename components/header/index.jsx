@@ -17,6 +17,7 @@ export default function Header(props) {
             <nav className={styles.navigation}>
             <Link href="">Welcome, {props.username}!</Link>
             <Link href="dashboard">Home</Link>
+            <Link href="blog">Travel Blog</Link>
             <Link href="safety">Safety</Link>
             <Link href="" onClick={logout} style={{ cursor: "pointer" }}>Logout</Link>
             </nav>

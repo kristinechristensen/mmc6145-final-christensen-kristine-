@@ -1,0 +1,26 @@
+
+.input input, 
+.input label, .input textarea {
+    font-size:1.5em;
+    display:block;
+    margin-bottom:10px;
+    
+}
+
+.input input, .input textarea {
+    background-color:#f2bf27f5;
+    width:80%;
+}
+
+.input label {
+    font-weight:bold;
+    margin-right:10px;}
+
+
+.form {
+    padding:2em;
+    width:60%;
+    margin:0 auto;
+    background-color: #048abf3e;
+    border-radius:15px;
+}
