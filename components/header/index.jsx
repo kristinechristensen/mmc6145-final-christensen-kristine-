@@ -12,7 +12,7 @@ export default function Header(props) {
     <header className={styles.container}>
       {props.isLoggedIn ? (
         <>
-          <p className={styles.logo}><a href="dashboard"><Image src={logo} /></a></p>
+          <p className={styles.logo}><a href="dashboard"><Image src={logo} alt="logo"/></a></p>
           <div>
             <nav className={styles.navigation}>
             <Link href="">Welcome, {props.username}!</Link>
@@ -24,7 +24,7 @@ export default function Header(props) {
         </>
       ) : (
         <>
-       <p className={styles.logo}><a href="/"><Image src={logo} style={{}} /></a></p>
+       <p className={styles.logo}><a href="/"><Image src={logo} alt="logo" /></a></p>
         <nav className={styles.navigation}>
           <p>
             <Link href="/">Home</Link>
