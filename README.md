@@ -1,7 +1,7 @@
 # MMC 6145: Final Project
 Submitted by Kristine Christensen
 
-![!\[picture alt\] (public/images/logob.png)](public/images/logob.png)
+![!\[!\\[picture alt\\] (public/images/logob.png)\](public/images/logob.png)](public/images/logod.png)
 
 ## Destination Discovery
 Travel Planning Made Easy will be a user-friendly travel destination finder that will help reduce stress and eliminate the guesswork from travel planning for future travelers. 
