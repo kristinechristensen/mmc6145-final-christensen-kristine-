@@ -15,7 +15,7 @@ export default function Header(props) {
           <p className={styles.logo}> <Image src={logo} alt="Logo Art Work"/></p>
           <div>
             <nav className={styles.navigation}>
-            <Link href="">Welcome, {props.username}!</Link>
+            <Link href="/">Welcome, {props.username}!</Link>
             <Link href="dashboard">Home</Link>
             <Link href="blog">Travel Blog</Link>
             <Link href="safety">Safety</Link>
