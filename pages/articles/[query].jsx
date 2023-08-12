@@ -27,7 +27,7 @@ export const getServerSideProps = withIronSessionSsr(
 
 
 export async function getServerSideProps({ params }) {
- const NYT_API_KEY = process.env.NYT_API_KEY;
+
   const URL = `https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${params.query}&fq=section_name:("Travel")&api-key=${NYT_API_KEY}`;
 
   const results = await search(URL);
