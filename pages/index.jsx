@@ -44,7 +44,7 @@ export default function Home(props) {
         <p className={styles.section}>
         Embark on a world of discovery and adventure with us. Whether you are an avid explorer or a first-time traveler, we are here to guide you on unforgettable journeys. Our platform is your gateway to immersive destinations, expert travel tips, and curated experiences. Discover the worlds hidden gems, unravel local secrets, and create memories that last a lifetime. Join our global community of wanderers and let us make every step of your journey truly remarkable. <strong>Your next adventure starts here!</strong></p>
                 <h2 className={styles.title2}>What are You Waiting For?  Your Journeys Await!</h2>
-        <h3 className={styles.title3}>Log In To Start Your Adventure!</h3>
+        <h3 className={styles.title3}><Link href="/">  Start Your Adventure! </Link></h3>
         
         {/* <p className={styles.description}>
           Current Location: <code className={styles.code}>{router.asPath}</code>
