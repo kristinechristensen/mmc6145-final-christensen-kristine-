@@ -1,0 +1,30 @@
+.footer {
+    width: 100%;
+    font-size:1.25em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    height: 5rem;
+    background-color: #04535f;
+    border-top:8px #f2bf27 solid;
+    color:white;
+    margin-top: auto;
+  }
+  
+  
+  .footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  .footer a:hover {
+    color:#f2bf27;
+  }
+
+
+  .center {
+    margin:0 auto;
+  }

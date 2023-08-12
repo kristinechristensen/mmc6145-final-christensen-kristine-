@@ -1,0 +1,11 @@
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:8px #f29829 solid;
+    border-top:1px #f29829 solid;
+    color:white;
+    
+  }
+

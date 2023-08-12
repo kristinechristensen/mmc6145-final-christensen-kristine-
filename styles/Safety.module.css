@@ -1,0 +1,52 @@
+.left {
+    padding:10px 20px;
+    margin-right:5%;
+    float:left;
+    width:60%;
+    font-size:1.25rem;
+    border-radius:20px;
+    background-color: rgba(128, 128, 128, 0.233);
+  }
+  
+  .right img {
+    border:solid 2px #048abf;
+    border-radius: 20px;
+   
+  }
+
+  .list li {
+    font-weight:bold;
+  }
+
+  .list li li {
+    font-weight:normal;
+  }
+  .title2 {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 2rem;
+    color:#f29829;
+  
+  }
+
+  .title2b {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 2rem;
+    color:#045358;
+  
+  }
+
+  .title3 {
+    font-size:1.25rem;
+    line-height: 1.15;
+    font-size: 2rem;
+    color:#048aBf;
+  }
+  
+  .formInput {
+    margin-right:8px;
+    font-size:1.25em;
+    background-color:#f2bf27;
+    padding:10px;
+  }
