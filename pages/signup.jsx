@@ -58,7 +58,7 @@ export default function Signup(props) {
       <Header isLoggedIn={props.isLoggedIn} username={props?.user?.username} className={styles.header} />
       <Hero />
       <main className={styles.main}>
-      <h1 className={styles.title}>       You're Arrived!         </h1>
+      <h1 className={styles.title}>       You' Have Arrived!         </h1>
         <h2 className={styles.title3}>Create Your Account</h2>
 
         {/* <p className={styles.description}>

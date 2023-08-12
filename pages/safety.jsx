@@ -60,7 +60,7 @@ export default function Safety(props) {
 
         <div className={styles.welcomeSection}>
           <div className={styles2.left}>
-            <h2 className={styles2.title2b}>It's important to stay safe!</h2>
+            <h2 className={styles2.title2b}>It is important to stay safe!</h2>
             <p>
               When it comes to ensuring your safety while traveling, a few
               simple precautions can go a long way. First and foremost, research
@@ -97,7 +97,7 @@ export default function Safety(props) {
                 Pack Smart:
                 <ul>
                   <li>
-                    Make a packing list to ensure you don't forget important
+                    Make a packing list to ensure you do not forget important
                     items.
                   </li>
                   <li>
@@ -150,7 +150,7 @@ export default function Safety(props) {
               Explore Beyond Boundaries: Discover the Latest Travel News for
               Your Destination! Dive into a world of information as you search
               for up-to-the-minute news on your dream travel spot. Our intuitive
-              search control ensures you're always in the know, whether you're
+              search control ensures you are always in the know, whether you are
               seeking travel advisories, local events, or insider tips. Start
               your journey now and stay connected to the pulse of your next
               adventure!

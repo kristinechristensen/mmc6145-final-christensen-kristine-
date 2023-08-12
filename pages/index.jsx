@@ -42,9 +42,8 @@ export default function Home(props) {
           Welcome to Destination Discovery
         </h1>
         <p className={styles.section}>
-        Embark on a world of discovery and adventure with us. Whether you're an avid explorer or a first-time traveler, we're here to guide you on unforgettable journeys. Our platform is your gateway to immersive destinations, expert travel tips, and curated experiences. Discover the world's hidden gems, unravel local secrets, and create memories that last a lifetime. Join our global community of wanderers and let's make every step of your journey truly remarkable. Your next adventure starts here!
-        </p>
-        <h2 className={styles.title2}>What are You Waiting For?  Your Journeys Await!</h2>
+        Embark on a world of discovery and adventure with us. Whether you are an avid explorer or a first-time traveler, we are here to guide you on unforgettable journeys. Our platform is your gateway to immersive destinations, expert travel tips, and curated experiences. Discover the worlds hidden gems, unravel local secrets, and create memories that last a lifetime. Join our global community of wanderers and let us make every step of your journey truly remarkable. <strong>Your next adventure starts here!</strong></p>
+                <h2 className={styles.title2}>What are You Waiting For?  Your Journeys Await!</h2>
         <h3 className={styles.title3}>Log In To Start Your Adventure!</h3>
         
         {/* <p className={styles.description}>
