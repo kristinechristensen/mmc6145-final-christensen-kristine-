@@ -1,34 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# MMC 6145: Final Project
+Submitted by Kristine Christensen
 
-## Getting Started
+![!\[picture alt\] (public/images/logo.png)](public/images/logo.png)
 
-First, run the development server:
+## Destination Discovery
+Travel Planning Made Easy will be a user-friendly travel destination finder that will help reduce stress and eliminate the guesswork from travel planning for future travelers. 
+![Alt text](public/images/website.PNG)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Features
+This was to be a web app that allowed individuals to search reviews and select their favorits which would be stored in a database. I had access to the Tripadvisor API but it turned out to be too restrictive so I had to pivot. I found the New York Times articles on Travel which are searchable. Users can search for a city and relevant news about that city will be displayed. 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Run It Local
+Currently, I am having difficulty with getting the database to connect so if you would like to run it locally, please download my files and use an editor like VSCode to run it. You'll need to ensure you have Node.js installed and will need to run npm i to install the dependencies. 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check back soon, the issue should be resolved.

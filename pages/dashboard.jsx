@@ -45,6 +45,7 @@ export default function Dashboard(props) {
         </h1>
         
         <div className={styles.welcomeSection}>
+          
        <div className={styles.left}>
         <p>Embark on a world of discovery and adventure with us. Whether you are an avid explorer or a first-time traveler, we are here to guide you on unforgettable journeys. Our platform is your gateway to immersive destinations, expert travel tips, and curated experiences. Discover the worlds hidden gems, unravel local secrets, and create memories that last a lifetime. Join our global community of wanderers and let us make every step of your journey truly remarkable. <strong>Your next adventure starts here!</strong></p>
 
@@ -53,7 +54,7 @@ export default function Dashboard(props) {
 
         </div>
         <div className={styles.right}>
-        <Image src={bags} alt="Get Moving On Your Adventure!" width="600" height="300" />
+        <Image src={bags} alt="Get Moving On Your Adventure!" width="400" height="300" />
         </div>
       </div>
 
